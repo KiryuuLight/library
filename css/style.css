@@ -1,0 +1,174 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #008080;
+    background-color: #f9f8ff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header button {
+    align-self: center;
+}
+
+.text {
+    font-weight: bold;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 1px solid teal;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    padding: 10px;
+    gap: 10px;
+
+    /* background-color: #f9f8ff;
+    opacity: 1;
+    background-size: 12px 12px;
+    background-image: repeating-linear-gradient(0deg, #008080, #008080 0.6000000000000001px, #f9f8ff 0.6000000000000001px, #f9f8ff); */
+
+}
+
+.card {
+    justify-self: center;
+    padding: 5px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.book-img {
+    width: 100px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    color: teal;
+    border-radius: 5px;
+    background-color: #f9f8ff;
+    cursor: pointer;
+    border: 1px solid teal;
+    padding: 5px;
+}
+
+/* Toggle Switch */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #C6DFE5;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #f9f8ff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #008080;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #008080;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Modal */
+
+#modal {
+    border: 1px solid teal;
+    max-width: 400px;
+    padding: 30px;
+    color: teal;
+    background-color: #f9f8ff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.wrapper input[type=text],
+.wrapper input[type=number] {
+    border: 1px solid #008080;
+
+}
+
+.wrapper input[type=text]:focus-visible,
+.wrapper input[type=number]:focus-visible {
+    outline: 1px solid #2b7c7c
+}

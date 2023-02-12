@@ -1,0 +1,40 @@
+{
+  "eslintConfig": {
+    "extends": [
+      "wesbos"
+    ],
+    "rules": {
+      "no-shadow": [
+        "error",
+        {
+          "builtinGlobals": false,
+          "hoist": "functions",
+          "allow": [],
+          "ignoreOnInitialization": false
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "endOfLine": "auto",
+          "tabWidth": 4
+        }
+      ]
+    }
+  },
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/script.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-wesbos": "^3.2.3"
+  }
+}
